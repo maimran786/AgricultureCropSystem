@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    height: 0%;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+nav div{
+    float: right;
+    margin-right: 20px;
+    margin-left: -80px;
+
+}
+nav div button{
+    display: block;
+    line-height: 40px;
+    margin: 5px;
+    
+}
+
+
+
+
+

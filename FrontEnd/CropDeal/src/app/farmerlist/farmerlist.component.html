@@ -1,0 +1,31 @@
+<!-- //checkout page for transactions -->
+<html *ngIf="!visible">
+  <head>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+  </head>
+  <body>
+    <section>
+      <div *ngFor="let crop of data" class="product">
+        <img mat-card-image  src="{{crop.crop_img}}" alt="{{crop.crop_img}}">
+        <h3>{{crop.crop_name}}</h3>
+        <div class="description">
+          <h5>Rs.{{crop.crop_price}}</h5>
+        </div>
+      </div>
+      <button type="button" (click)="pay(5000)" id="checkout-button">Checkout: Rs {{amount}}</button>
+    </section>
+  </body>
+
+</html>
+<html *ngIf="visible">
+<head>
+  <title>Checkout canceled</title>
+  <link rel="stylesheet" href="./farmerlist.component.css">
+</head>
+<body>
+  <section>
+    <p>Forgot to add something to your cart? Shop around then come back to pay!</p>
+  </section>
+</body>
+</html>

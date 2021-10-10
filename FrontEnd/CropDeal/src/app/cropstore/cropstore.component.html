@@ -1,0 +1,34 @@
+<body>
+    <nav>
+      <button class="redirect" mat-button color="primary" (click)="redirecttouploadcrop()">ADD CROP</button>
+      <button class="redirect" mat-button color="primary" (click)="redirecttofarmer()">EDIT FARMER DETAILS</button>
+      <button class="redirect" mat-button color="primary" (click)="redirecttodealer()">EDIT DEALER DETAILS</button>
+      <button class="redirect" mat-button color="primary" (click)="deleteuser()">DELETE USER</button>
+      </nav>
+  <div><hr></div>
+    <mat-card *ngFor="let cropobj of crops" class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{cropobj.crop_name}}</mat-card-title>
+        <mat-card-subtitle>{{cropobj.crop_type}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image  src="{{cropobj.crop_img}}" alt="{{cropobj.crop_img}}">
+      <mat-card-content >
+        <b>PRICE</b>: Rs. {{cropobj.crop_price}}
+        <br>
+        PROVIDER:{{cropobj.uploaded_by}}
+        <br>
+          Quantity Available:{{cropobj.crop_quantity}}
+          <br>
+        
+      </mat-card-content>
+      <br>
+      <mat-card-actions>
+        
+        <button (click)="invoice(cropobj)"  mat-button>Add to Cart</button>
+        <button (click)="bill(cropobj)" mat-button>Checkout</button>
+      </mat-card-actions>
+    </mat-card>
+  </body>
+  
+    

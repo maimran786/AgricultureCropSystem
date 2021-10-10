@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242d60;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', 'Ubuntu', sans-serif;
+    height: 100vh;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  section.finish {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 152px;
+    border-radius: 6px;
+    padding: 20px;
+    justify-content: space-between;
+  }

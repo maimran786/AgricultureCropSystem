@@ -1,0 +1,69 @@
+h4{
+  text-align: center;
+}
+body{
+  margin-left: 3%;
+  padding:20px;
+  text-align: center;
+
+ }
+div{
+  color: red;
+  font-weight: bold;
+}
+input{
+  color: black;
+}
+h3{
+  font-weight: bold;
+  color: black;
+}
+button.redirect{
+  float:left;
+}
+img{
+  width: 200px;
+  height:100px;
+}
+.example-card {
+  padding:1%;
+  margin: 1%;
+  max-width: 200px;
+  background-color: rgb(240, 213, 180);
+}
+nav{
+  display: block;
+  padding-block: 30px;
+}
+.example-header-image {
+  background-size: cover;
+}
+mat-card{
+  display: inline-table;
+  height:300px;  
+}
+
+mat-card-content{
+text-align: left;
+height: 40px;
+}
+
+mat-card-title{
+  text-align: left;
+  height:50px
+}
+
+mat-card-subtitle{
+  text-align: left;
+}
+a{
+  text-decoration: none;
+}
+button.add,button.sub{
+  background-color: white;
+  border-radius: 5px;
+}
+button{
+  background-color: white;
+  border:none
+}

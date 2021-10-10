@@ -1,0 +1,36 @@
+  body{
+    padding: 0%;
+    margin:0%;
+    text-align: center;
+    background-image: url("https://wallpaperaccess.com/full/2338264.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: scroll;
+    background-color: rgba(226, 216, 216, 0.3);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+} 
+  td, th {
+   width: 25%;
+  }
+ 
+  table {
+      padding: 2%;
+      margin: 2% 2% 2% 5%;
+      font-family: arial, sans-serif;
+      width: 80%;
+  }
+  th{
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  td {
+    border: 1px solid #fdfcfc;
+    text-align: left;
+    font-weight: bold;
+    padding: 3px;
+  }
+  b{
+    font-size: x-large;
+  }
